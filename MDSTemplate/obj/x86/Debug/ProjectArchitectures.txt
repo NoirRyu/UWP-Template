@@ -1,0 +1,1 @@
+c:\users\mds\documents\visual studio 2017\Projects\MDSTemplate\MDSTemplate\MDSTemplate.csproj;x86
