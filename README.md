@@ -13,6 +13,7 @@
   protected override void OnNavigatedTo(NavigationEventArgs e) {}
   protected override void OnNavigatedFrom(NavigationEventArgs e) {}
   Better to implement Dispose() in OnNavigatedFrom 
+  
 **Note** You can refer to Scenario1.xaml.cs file for default implementation. 
    
 
