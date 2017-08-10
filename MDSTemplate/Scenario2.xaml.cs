@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -20,11 +20,33 @@ namespace MDSTemplate
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Scenario2 : Page
+    public sealed partial class Scenario2 : Page, IDisposable
     {
+        MainPage rootPage = MainPage.Current;
         public Scenario2()
         {
             this.InitializeComponent();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            //rootPage.NotifyUser("Status is Good", NotifyType.StatusMessage);
+            rootPage.NotifyUser("Status is Bad", NotifyType.ErrorMessage);
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            if (e.NavigationMode == NavigationMode.Forward && e.Uri == null)
+            {
+                return;
+            }
+
+            Dispose();
+        }
+
+        public void Dispose()
+        {
+
         }
     }
 }
