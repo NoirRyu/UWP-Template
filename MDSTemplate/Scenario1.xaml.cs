@@ -13,6 +13,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace MDSTemplate
@@ -26,6 +28,12 @@ namespace MDSTemplate
         public Scenario1()
         {
             this.InitializeComponent();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            rootPage.NotifyUser("Status is Good", NotifyType.StatusMessage);
+            //rootPage.NotifyUser("Status is Bad", NotifyType.ErrorMessage);
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
