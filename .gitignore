@@ -3,3 +3,9 @@
 ################################################################################
 
 /MDSTemplate/bin/x64/Debug
+/MDSTemplate/obj
+/MDSTemplate/obj
+/MDSTemplate/obj/ARM
+/MDSTemplate/obj/ARM/Debug
+/MDSTemplate/obj/ARM/Debug/MainPage.g.cs
+/MDSTemplate/obj

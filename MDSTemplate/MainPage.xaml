@@ -31,7 +31,7 @@
                         </ListBox.ItemTemplate>
                     </ListBox>
                     <StackPanel x:Name="FooterPanel" Orientation="Vertical" RelativePanel.AlignBottomWithPanel="True">
-                          <!--<Image Source="Assets/.png" Stretch="None" HorizontalAlignment="Left" Height="17" Width="100" />-->  
+                          <Image Source="Assets/logo.png" Stretch="None" HorizontalAlignment="Left" />
                         <TextBlock x:Name="Copyright" Text="&#xA9; MDS Technology. All rights reserved."  Margin="10,10,0,0" TextWrapping="Wrap"/>
                     </StackPanel>
                 </RelativePanel>
