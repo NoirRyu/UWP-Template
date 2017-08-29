@@ -105,6 +105,11 @@ namespace MDSTemplate
                 StatusPanel.Visibility = Visibility.Collapsed;
             }
         }
+        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Splitter.IsPaneOpen = !Splitter.IsPaneOpen;
+        }
     }
 
 
